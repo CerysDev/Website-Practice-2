@@ -1,0 +1,158 @@
+<html>
+<head>
+  <!-- This is all the css and scripts that are needed for it to work. -->
+  <script src="jquery.min.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+  <link rel="stylesheet" href="style.css">
+  <script src="scrollreveal.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <!-- This is the navigation bar in action. -->
+  <ul class="center uln" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+    <li class="lin"><a style="border-radius: 15px 0px 0px 15px;" class="isactive" href="#home">Home</a></li>
+    <li class="lin"><a href="#products">Products</a></li>
+    <li class="lin"><a href="#sitemap">Site Map</a></li>
+    <li class="lin"><a href="#faq">FAQ</a></li>
+    <li class="lin"><a href="#reviews">Reviews</a></li>
+    <li class="lin"><a href="#about">About</a></li>
+    <li class="lin"><a style="border-radius: 0px 15px 15px 0px;" href="#contactus">Contact Us</a></li>
+  </ul>
+</head>
+<body data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+  <!--This is the home page. -->
+  <img id="home" src="bg.png" style="position: absolute; right: 0px; top: 0px; width: 875px;" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+  <div class="centerme">
+    <h1 style="font-size: 96px;">Cakes 4 U</h1>
+    <p>We make sure all our cakes are absolute perfection.<br>You will not be disappointed if you order from us!</p>
+  </div>
+  <div class="sep" style="text-align: center; top: 1350px; height: 650px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <img src="cake.jpg" style="width: 50%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 32px; transform: translate(50%, -0%); left: 25%;">
+    <p style="top: 350px; position: absolute;">We are a proud cake company willing to make anything you throw at us. We have multiple professionals that have years in experience. We always stay in contact with our customers.</p>
+
+  </div>
+  <!--This is the products page. -->
+  <div id="products" class="sep" style="top: 1350px; height: 750px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <h1 style="text-align: center;">Products</h1>
+    <table style="width:100%">
+      <tr>
+        <th><img src="product.jpg"></th>
+        <th><img src="product2.jpg"></th>
+        <th><img src="product3.jpg"></th>
+      </tr>
+      <tr>
+        <td><h1>Birthday £100.00</h1></td>
+        <td><h1>Celebration £75.00</h1></td>
+        <td><h1>Custom £250.00</h1></td>
+      </tr>
+      <tr>
+        <td><button class="button button1" style="top: 400px; position: absolute;" onclick="AddedBasket()">Add to Basket</button></td>
+        <td><button class="button button1" style="top: 400px; position: absolute;" onclick="AddedBasket()">Add to Basket</button></td>
+        <td><button class="button button1" style="top: 400px; position: absolute;" onclick="AddedBasket()">Add to Basket</button></td>
+      </tr>
+    </table>
+  </div>
+  <!--This is the Site Map page. -->
+  <div id="sitemap" class="sep" style="top: 1350px; height: 750px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <h1 style="text-align: center;">Site Map</h1>
+    <div style="width: 100%;"><iframe style="border-radius: 32px;" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Basingstoke+(Cakes%204%20U)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+    <script>
+    window.sr = new scrollReveal();
+    </script>
+  </div>
+  <!--This is the FAQ page. -->
+  <div id="faq" class="sep" style="top: 1350px; height: 750px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <h1 style="text-align: center;">FAQ</h1>
+    <div class="parent-container">
+      <ul class="faq">
+        <li>
+          <h3 class="question">How long do we take?
+            <div class="plus-minus-toggle collapsed"></div>
+          </h3>
+          <div class="answer">We take about a week to get exactly what you want, this includes asking you whether you are happy with how the cake is and making chances if needed.</div>
+        </li>
+        <li>
+          <h3 class="question">What is your rating?
+            <div class="plus-minus-toggle collapsed"></div>
+          </h3>
+          <div class="answer">We have been rated 4.6 out of 5 stars on TrustPilot, this assures you, we will do are best to get exactly what your looking for.</div>
+        </li>
+        <li>
+          <h3 class="question">Can I get a quote?
+            <div class="plus-minus-toggle collapsed"></div>
+          </h3>
+          <div class="answer">Yes, we can give you a quote on how much it will be if you can describe or show a picture of what you want the cake to look like.</div>
+        </li>
+        <li>
+          <h3 class="question">When did this company begin?
+            <div class="plus-minus-toggle collapsed"></div>
+          </h3>
+          <div class="answer">We first started the company in 2000 and have been doing well ever since, we always are looking for ways to improve are business and unlike most businesses we will listen to your feedback.</div>
+        </li>
+      </ul>
+    </div>
+    <script src="custom.js"></script>
+  </div>
+  <!--This is the reviews page. -->
+  <div id="reviews" class="sep" style="top: 1650px; height: 1250px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <h1 style="text-align: center;">Reviews</h1>
+    <div class="review">
+      <h1><img src="review0.png" style="border-radius: 32px;">John Appleseed</h1>
+      <p>This company did everything they could as promised, you won't be disappointed.</p>
+      <img src="rating.png">
+    </div>
+    <div class="review">
+      <h1><br><img src="review1.png" style="border-radius: 32px;">Luke Castaway</h1>
+      <p>Good service, easy to communicate with, all around good company.</p>
+      <img src="rating.png">
+    </div>
+    <div class="review">
+      <h1><br><img src="review2.png" style="border-radius: 32px;">Brad Poggeroni</h1>
+      <p>Amazing service, I can't describe how good they are!</p>
+      <img src="rating.png">
+    </div>
+    <div class="review">
+      <h1><br><img src="review3.jpg" style="border-radius: 32px;">Joe Smith</h1>
+      <p>I had a really hard request for them to make a cake of my friends face and they didn't disappoint. They also have disability ramps in the building which is hard to find these days.</p>
+      <img src="rating.png">
+    </div>
+  </div>
+  <!--This is the about page. -->
+  <div id="about" class="sep" style="top: 1800px; height: 1500px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <div class="about">
+      <br><br><h1 style="text-align: center;">About</h1>
+      <p>If you’re looking for the ultimate birthday, anniversary, christening, wedding, or ‘just because’ cake, Cakes 4 U can create a bespoke design to match the theme or person it is for. No request is too big, ostentatious, or beyond our capability.</p>
+      <div class="row">
+        <div class="column">
+          <img src="cake0.jpg">
+          <img src="cake1.jpg">
+        </div>
+        <div class="column">
+          <img src="cake2.jpg">
+          <img src="cake3.jpg">
+        </div>
+        <div class="column">
+          <img src="cake4.jpg">
+          <img src="cake5.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--This is the contact page -->
+  <div id="contactus" class="sep" style="top: 1600px; height: 750px; width: 1000px; position: relative; transform: translate(-50%, -50%); left: 50%;">
+    <h1 style="text-align: center;">Contact Us</h1>
+    <pre><p style="text-align: center;">Phone Number: 07315726028    Email: hwcp@business.co.uk<br>HWCP, Festival Place, Basingstoke, Hampshire</p></pre>
+    <div class="form">
+      <form action="">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="msg">Message:</label>
+        <input type="text" id="msg" name="msg"><br><br>
+        <input type="submit" value="Submit" onclick="Message()">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
